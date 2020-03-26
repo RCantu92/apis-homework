@@ -1,19 +1,3 @@
-# Unit 5 — How do you like them apps?
-
-![Financial Planner](Images/financial-planner.png)
-
-## Background
-
-The consumer division of Harold's company has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts on login. However, some of the calculations are tricky, and Harold could really use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
-
-In this homework assignment, you will help Harold complete the following tasks:
-
-1. [Budget Analysis with Plaid](#Budget-Analysis)
-2. [Retirement Planner](#Retirement-Planner)
-3. [Financial Report](#Financial-Report)
-
-- - -
-
 ### Files
 
 [Budget Starter Notebook](Starter_Code/account_summary.ipynb)
@@ -42,11 +26,7 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 
 * Spending Categories Pie Chart
 
-  ![Expenses per category](Images/spending-pie.png)
-
 * Spending Per Month Bar Chart
-
-  ![Expenses per month](Images/spending-month.png)
 
 4. Use the API to fetch income data from the sandbox and print the following:
 
@@ -69,12 +49,8 @@ Create a Monte Carlo simulation for the retirement portfolio:
 1. Use the IEX API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represent the 60% stocks (SPY) and 40% bonds (AGG).
 2. Run a Monte Carlo Simulation of 500 runs and 30 years for the 60/40 portfolio and plot the results.
 
-    ![monte carlo](Images/monte-carlo.png)
-
 3. Select the ending cumulative returns from the Monte Carlo simulation and calculate the interval values for a 90% confidence interval.
 4. Using the ending cumulative returns, plot a histogram of the results and plot the 90% confidence interval as vertical lines on the histogram.
-
-    ![histogram](Images/histogram.png)
 
 ##### Retirement Analysis
 
@@ -86,8 +62,6 @@ Use the Monte Carlo simulation data to answer the following questions:
 4. How would a 50% increase in the initial investment amount affect the 4% retirement withdrawal? In other words, what happens if the initial investment had been bigger?
 5. (Optional Challenge) Use the Monte Carlo data and calculate the cumulative returns at the 5%, 50%, and 95% quartiles and plot this data as a line chart to see how the cumulative returns change over the life of the investment.
 
-    ![projected-returns.png](Images/projected-returns.png)
-
 #### Financial Report
 
 In this section, you will compile a financial report to demo your calculations to the consumer app team. The report should be written as a markdown file and include the following sections:
@@ -95,34 +69,86 @@ In this section, you will compile a financial report to demo your calculations t
 1. Budget Analysis: Summarize the transaction data from the budget analysis and include images for each chart and table produced.
 2. Retirement Planning: Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
 
-#### Optional Challenge — Early Retirement
+***
 
-Harold was really impressed with your work on this planner, but commented that 30 years seems like such a long time to wait to retire! Harold starts wondering if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in five years instead of 30!
+# Banking and Investing Reporting
 
-- - -
+The consumer division of Harold's company has decided to offer budgeting and financial planning services to customers. They want to build a report for customers that links to their banking and investment accounts and automatically refreshes the data and charts on login. However, some of the calculations are tricky, and Harold could really use some help connecting the accounts and simulating the retirement investment projections. Luckily, there are APIs available to obtain account transactions and fetch retirement portfolio prices.
 
-### Resources
+In this homework assignment, you will help Harold complete the following tasks:
 
-[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+1. Budget Analysis with Plaid
+2. Retirement Planner
+3. Financial Report
 
-- - -
+## Getting Started
 
-### Hints and Considerations
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-[Plaid API Docs](https://plaid.com/docs/)
+### Prerequisites
 
-[IEX Financial API Docs](https://addisonlynch.github.io/iexfinance/stable/)
+What things you need to install the software and how to install them
 
-For the Monte Carlo simulation, start out by running 100 simulations for one year of returns, and when you have the code worked out, run the simulation at 100–500 simulations for 30 years (this takes a long time).
+```
+Give examples
+```
 
-- - -
+### Installing
 
-### Submission
+A step by step series of examples that tell you how to get a development env running
 
-* Create Jupyter Notebooks for the analysis and planner and host the notebooks on GitHub.
-* Include a Markdown Financial Planner report that summarizes your assumptions and finding and include this report in your GitHub repo.
-* Submit the link to your GitHub project to Bootcampspot.
+Say what the step will be
 
-- - -
+```
+Give the example
+```
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Roberto Cantu**  - [GitHub](https://github.com/RCantu92)
